@@ -22,9 +22,9 @@ function getPostById(id, db = connection) {
 
 // will need to modify after auth/user
 function createPost(newPost, db = connection) {
-    const timestamp = Date.now()
-    const nowDate = timestamp.toDateString()
-    const { title, img, vid, body, author } = newPost
+    // const timestamp = Date.now()
+    // const nowDate = timestamp.toDateString()
+    const { title, img, vid, body, author, postDate } = newPost
     return db('posts')
         .insert({
             title,
@@ -32,9 +32,12 @@ function createPost(newPost, db = connection) {
             vid,
             body,
             author,
-            postDate: nowDate
+            postDate
         })
-
+        .catch(err => {
+            console.error(err)
+            throw err
+        })
 }
 
 function deletePost(id, db = connection) {

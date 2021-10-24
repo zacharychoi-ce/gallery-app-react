@@ -36,8 +36,8 @@ router.get('/posts/:id', (req, res) => {
 
 // POST add new post
 router.post('/createpost', (req, res) => {
-    const { title, img, vid, body, author } = req.body
-    const post = { title, img, vid, body, author }
+    const { title, img, vid, body, author, postDate } = req.body
+    const post = { title, img, vid, body, author, postDate }
     db.createPost(post)
         .then((id) => {
             res.status(201).json({ id })
