@@ -41,7 +41,7 @@ function createPost(newPost, db = connection) {
 }
 
 function deletePost(id, db = connection) {
-    return db('items')
+    return db('posts')
         .where('id', id)
         .delete()
 }
