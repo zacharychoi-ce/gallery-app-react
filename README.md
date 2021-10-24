@@ -1,18 +1,24 @@
 # Gallery app 
 
+The app is built using React & node.js
+
 ```sh
 git clone https://github.com/zacharychoi-ce/gallery-app-react.git
 cd gallery-app-react && npm i
 ```
 
-## Separate client/server
+## Stretch
+- Move database to AWS RDS - mySQL, server-side to AWS Lambda and API Gateway
+- Update Posts
+- Styling
 
-The boilerplate used also set up to host the client using `webpack-dev-server` with hot module reloading etc. To use this method, in one terminal run:
+## Running the app
+
 ```sh
-npm run client
+npm run dev
 ```
-and in the other:
+
+On browser, run:
 ```sh
-npm run server
+http://localhost:3000
 ```
-The client will be available on http://localhost:8080 and the server on http://localhost:3000. Note that you will still need to manage CORS between the two, as they are on different ports.
