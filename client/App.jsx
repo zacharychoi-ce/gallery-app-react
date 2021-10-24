@@ -15,6 +15,7 @@ const App = () => {
     <>
       <div>
         <Header />
+        {/* <Contact /> */}
         <main>
           <Route exact path='/' component={Home} />
           <Route path='/about' component={About} />
