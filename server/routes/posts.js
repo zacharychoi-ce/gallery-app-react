@@ -42,3 +42,5 @@ router.delete('/:id', (req, res) => {
             res.status(500).json({ message: 'Unable to delete!' })
         })
 })
+
+module.exports = router
