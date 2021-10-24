@@ -10,7 +10,7 @@ exports.seed = (knex) => {
           vid: '',
           body: 'Plum Blossom, 2019, on Samsung Galaxy Note 9',
           author: 'Zachary Choi',
-          postDate: '22/10/2021'
+          postDate: '21/10/2021'
         },
         {
           id: 2,
@@ -19,7 +19,7 @@ exports.seed = (knex) => {
           vid: '',
           body: 'Dancer Sid prepped for stage, 2019, on Samsung Galaxy Note 9',
           author: 'Zachary Choi',
-          postDate: todayDate
+          postDate: '22/10/2021'
         }
       ])
     })
