@@ -4,9 +4,7 @@ import React from 'react'
 export default function Home() {
     return (
         <section>
-            <h1>Zac's Gallery, a collection</h1>
-            <div></div>
-            <p>A food conserving project by the getFood group</p>
+            <h1>Zac's Gallery, a collection.. and more</h1>
         </section>
     )
 }

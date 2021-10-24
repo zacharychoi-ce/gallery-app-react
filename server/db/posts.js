@@ -24,7 +24,7 @@ function getPostById(id, db = connection) {
 function createPost(newPost, db = connection) {
     const timestamp = Date.now()
     const nowDate = timestamp.toDateString()
-    const { title, img, vid, body, author, postDate } = newPost
+    const { title, img, vid, body, author } = newPost
     return db('posts')
         .insert({
             title,

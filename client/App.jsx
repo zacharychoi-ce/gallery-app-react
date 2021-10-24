@@ -20,7 +20,7 @@ const App = () => {
           <Route path='/about' component={About} />
           <Route path='/contact' component={Contact} />
           <Route path='/createpost' component={CreatePost} />
-          <Route path='/post/:id' component={PostDetails} />
+          <Route path='/posts/:id' component={PostDetails} />
           <Route path='/createmsg' component={CreateMsg} />
           <Route path='/deletemsg' component={DeleteMsg} />
         </main>
