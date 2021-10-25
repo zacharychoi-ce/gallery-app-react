@@ -21,7 +21,7 @@ router.get('/', (req, res) => {
 })
 
 // GET post by id 
-router.get('/posts/:id', (req, res) => {
+router.get('/:id', (req, res) => {
     const id = Number(req.params.id)
     db.getPostById(id)
         .then((post) => {

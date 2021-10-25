@@ -9,7 +9,7 @@ server.use(express.json())
 server.use(express.static(path.join(__dirname, './public')))
 server.use(cors('*'))
 
-server.use('/api/v1/', postsRoutes)
+server.use('/api/v1/posts', postsRoutes)
 
 server.get('*', (req, res) => {
   const appPath = path.join(__dirname, 'public', 'index.html')

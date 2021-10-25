@@ -18,6 +18,7 @@ const App = () => {
         {/* <Contact /> */}
         <main>
           <Route exact path='/' component={Home} />
+          {/* Failed prop type console error from below, to check */}
           <Route path='/about' component={About} />
           <Route path='/contact' component={Contact} />
           <Route path='/createpost' component={CreatePost} />
