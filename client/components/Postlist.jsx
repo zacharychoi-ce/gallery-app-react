@@ -15,26 +15,24 @@ export default function PostList() {
     }, [])
 
     return (
-        <>
-            <section>
-                <div>
-                    This is the PostList component
-                    <Link to='/createPost'>Add Post</Link>
-                </div>
-                {posts.map(post => {
-                    <React.Fragment key={posts.id} >
-                        <Post
-                            key={posts.id}
-                            title={posts.title}
-                            img={posts.img}
-                            vid={posts.vid}
-                            body={posts.body}
-                            author={posts.author}
-                            postDate={posts.postDate}
-                        />
-                    </React.Fragment>
-                }).reverse()}
-            </section>
-        </>
+        <section>
+            <div>
+                This is the PostList component
+                <Link to='/createPost'>Create Post</Link>
+            </div>
+            {posts.map((post) => (
+                // <React.Fragment key={post.id} >
+                <Post
+                    key={post.id}
+                    title={post.title}
+                    img={post.img}
+                    vid={post.vid}
+                    body={post.body}
+                    author={post.author}
+                    postDate={post.postDate}
+                />
+                // </React.Fragment>
+            ))}
+        </section>
     )
 }

@@ -30,7 +30,7 @@ export default function PostDetails() {
                 <img src={singlePost?.img} alt={singlePost?.img}
                 />
                 <article>
-                    <h1>{singlePost?.title}</h1>
+                    <h2>{singlePost?.title}</h2>
                     <h1>Description: {singlePost?.body}</h1>
                     <h1>Author: {singlePost?.author}</h1>
                     <h1>Post date: {singlePost?.postDate}</h1>
