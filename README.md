@@ -3,9 +3,12 @@
 The app is built using React & node.js
 
 ## Stretch
+- External gallery API page e.g. art institutes, pinterest 
 - Move database to AWS RDS - mySQL, server-side to AWS Lambda and API Gateway
-- Update Posts
-- Styling
+- Authentication
+- Update posts
+- Styling (SCSS / Tailwind)
+- Playlist link, player addon
 
 ## Running the app
 
