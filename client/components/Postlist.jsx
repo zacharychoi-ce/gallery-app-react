@@ -21,17 +21,18 @@ export default function PostList() {
                 <Link to='/createPost'>Create Post</Link>
             </div>
             {posts.map((post) => (
-                // <React.Fragment key={post.id} >
-                <Post
-                    key={post.id}
-                    title={post.title}
-                    img={post.img}
-                    vid={post.vid}
-                    body={post.body}
-                    author={post.author}
-                    postDate={post.postDate}
-                />
-                // </React.Fragment>
+                //React.Fragment key line for Post.jsx's `/posts/${id} to work
+                <React.Fragment key={post.id} >
+                    <Post
+                        id={post.id}
+                        title={post.title}
+                        img={post.img}
+                        vid={post.vid}
+                        body={post.body}
+                        author={post.author}
+                        postDate={post.postDate}
+                    />
+                </React.Fragment>
             ))}
         </section>
     )

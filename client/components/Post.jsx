@@ -12,12 +12,13 @@ export default function Post(props) {
         // author,
         postDate } = props
 
+    // console.log('console log in Post.jsx, id: ', id)
     return (
         <section>
             <div>
                 <h3>{title}</h3>
                 <img src={img} alt={img} />
-                {/* if vid string > 0, show vid as hyperlink */}
+                {/* if vid string.length > 0, show vid as hyperlink */}
                 {/* <p>{body}</p>
                     <p>Author: {author}</p> */}
                 <p>Post date: {postDate}</p>
