@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { getPosts } from '../reducer/postsSlice'
 import { Link } from 'react-router-dom'
 
-import PostDetails from './PostDetails'
+import Post from './Post'
 
 export default function PostList() {
     const posts = useSelector(state => state.posts)
@@ -23,7 +23,7 @@ export default function PostList() {
                 </div>
                 {posts.map(post => {
                     <React.Fragment key={posts.id} >
-                        <PostDetails
+                        <Post
                             key={posts.id}
                             title={posts.title}
                             img={posts.img}
@@ -34,9 +34,6 @@ export default function PostList() {
                         />
                     </React.Fragment>
                 }).reverse()}
-
-
-
             </section>
         </>
     )

@@ -21,7 +21,7 @@ router.get('/', (req, res) => {
 })
 
 // GET post by id 
-router.get('/:id', (req, res) => {
+router.get('/posts/:id', (req, res) => {
     const id = Number(req.params.id)
     db.getPostById(id)
         .then((post) => {
@@ -53,7 +53,7 @@ router.post('/createpost', (req, res) => {
 })
 
 // DELETE by id
-router.delete('/:id', (req, res) => {
+router.delete('/posts/:id', (req, res) => {
     const id = Number(req.params.id)
     db.deletePost(id)
         .then(() => {
