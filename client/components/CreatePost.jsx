@@ -1,11 +1,21 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
+import { createPost } from '../reducer/postsSlice'
 
-export default function About() {
+import CreateForm from './CreateForm'
+
+export default function CreatePost() {
+    const dispatch = useDispatch()
+
+    function submitItem(post) {
+        dispatch(createPost(post))
+    }
+
     return (
-        <section>
-            <h1>This is the CreatePost component</h1>
-            <Link to='/'>Go Back</Link>
-        </section>
+        <div>
+            <CreatePost
+                submitItem={submitItem}
+            />
+        </div>
     )
 }

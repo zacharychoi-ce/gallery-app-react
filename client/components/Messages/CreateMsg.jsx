@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { GrStatusGood } from 'react-icons/gr'
+// import { GrStatusGood } from 'react-icons/gr'
 
-export default function AddMsg() {
+export default function CreateMsg() {
     return (
         <div>
             {/* add icon here */}

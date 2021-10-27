@@ -2,12 +2,17 @@
 
 The app is built using React & node.js
 
+## Not yet done
+- Create post
+- vid' url to show as video
+- Styling (SCSS / Tailwind)
+- Update post
+
 ## Stretch
+- Multiple images in one post
 - Discovery page - External gallery API page e.g. art institutes, pinterest. Then reblog.
 - Move database to AWS RDS - mySQL, server-side to AWS Lambda and API Gateway
-- Authentication
-- Update posts
-- Styling (SCSS / Tailwind)
+- Authentication (will change nature of app)
 - Playlist link, player addon
 
 ## Running the app
