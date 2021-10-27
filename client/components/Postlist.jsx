@@ -18,7 +18,7 @@ export default function PostList() {
         <section>
             <div>
                 This is the PostList component
-                <Link to='/createPost'>Create Post</Link>
+                <Link to='/createpost'>Create Post</Link>
             </div>
             {posts.map((post) => (
                 //React.Fragment key line for Post.jsx's `/posts/${id} to work

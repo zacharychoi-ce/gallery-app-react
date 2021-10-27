@@ -27,31 +27,43 @@ export default function CreateForm(props) {
     const handleSubmit = (e) => {
         e.preventDefault()
         props.submitItem(form)
+        history.push('/createmsg')
 
     }
 
     return (
         <>
+            {/* maybe an icon here e.g. camera sketch icon with a plus sign */}
             <div>
                 Add..
             </div>
             <form onSubmit={handleSubmit}>
                 <div>
-                    <h2>
-                        <input
-                            id='title'
-                            title='title'
-                            type='text'
-                            placeholder='Title'
-                            value={title}
-                            onChange={handleChange}
-                        />
-                    </h2>
+                    <input
+                        id='title'
+                        title='title'
+                        type='text'
+                        placeholder='Title'
+                        value={title}
+                        onChange={handleChange}
+                    />
                 </div>
+                <div>
+                    <input
+                        id='body'
+                        title='body'
+                        type='text'
+                        placeholder='Your text here'
+                        value={title}
+                        onChange={handleChange}
+                    />
+                </div>
+                <button>
+                    Publish
+                </button>
             </form>
 
             <div>
-
                 <Link to='/'>Cancel</Link>
             </div>
         </>
