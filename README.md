@@ -3,7 +3,7 @@
 The app is built using React & node.js
 
 ## Stretch
-- External gallery API page e.g. art institutes, pinterest 
+- Discovery page - External gallery API page e.g. art institutes, pinterest. Then reblog.
 - Move database to AWS RDS - mySQL, server-side to AWS Lambda and API Gateway
 - Authentication
 - Update posts

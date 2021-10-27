@@ -31,9 +31,9 @@ export default function PostDetails() {
                 />
                 <article>
                     <h2>{singlePost?.title}</h2>
-                    <h1>Description: {singlePost?.body}</h1>
-                    <h1>Author: {singlePost?.author}</h1>
-                    <h1>Post date: {singlePost?.postDate}</h1>
+                    <h1>{singlePost?.body}</h1>
+                    <h1>By: {singlePost?.author}</h1>
+                    <h1>Date: {singlePost?.postDate}</h1>
                     <button onClick={() => handleDelete(singlePost?.id)}>
                         Delete post
                     </button>
