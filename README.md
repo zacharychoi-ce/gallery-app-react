@@ -3,9 +3,12 @@
 The app is built using React & node.js
 
 ## Not yet done
+- Repo name change: d.gallery?
+    - Home title change
 - Create post
 - vid' url to show as video
 - Styling (SCSS / Tailwind)
+    - Remove border for inputs, only placeholder
 - Update post
 
 ## Stretch

@@ -23,7 +23,7 @@ export default function Post(props) {
                     <p>Author: {author}</p> */}
                 <p>Post date: {postDate}</p>
             </div>
-            <Link to={`/posts/${id}`}>Further info</Link>
+            <Link to={`/posts/${id}`}>Info</Link>
         </section>
     )
 }

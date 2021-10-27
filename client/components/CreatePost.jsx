@@ -13,7 +13,7 @@ export default function CreatePost() {
 
     return (
         <div>
-            <CreatePost
+            <CreateForm
                 submitItem={submitItem}
             />
         </div>

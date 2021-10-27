@@ -15,13 +15,15 @@ export default function CreateForm(props) {
     })
     const { title, vid, body, author, postDate } = form
 
+    // check this. item is whatever handleChange class is in?
     const handleChange = (e) => {
-        const { title, value } = e.target
+        const { item, value } = e.target
         setForm({
             ...form,
-            [title]: value
+            [item]: value
         })
     }
+
     const handleSubmit = (e) => {
         e.preventDefault()
         props.submitItem(form)
@@ -30,9 +32,24 @@ export default function CreateForm(props) {
 
     return (
         <>
-            <form>
-
+            <div>
+                Add..
+            </div>
+            <form onSubmit={handleSubmit}>
+                <div>
+                    <h2>
+                        <input
+                            id='title'
+                            title='title'
+                            type='text'
+                            placeholder='Title'
+                            value={title}
+                            onChange={handleChange}
+                        />
+                    </h2>
+                </div>
             </form>
+
             <div>
 
                 <Link to='/'>Cancel</Link>
