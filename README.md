@@ -17,6 +17,7 @@ The app is built using React & node.js
 - Move database to AWS RDS - mySQL, server-side to AWS Lambda and API Gateway
 - Authentication (will change nature of app)
 - Playlist link, player addon
+- Backend restructure for different logins (post uploader_id etc)
 
 ## Running the app
 
